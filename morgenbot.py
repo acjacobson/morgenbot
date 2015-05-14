@@ -248,18 +248,18 @@ def giphy(text):
 
 def help(topic=''):
     if topic == '':
-        post_message('```My commands are \n \
-            *!standup* - to initiate a new standup \n \
-            *!start* - to get started with standup once everyone is ready \n \
-            *!cancel* - if you\'d like to stop the standup entirely.\n \
-            *!next* - to call on the next person when you\'re done standing up \n \
-            *!skip* - to skip someone who isn\'t standing up that day \n \
-            *!table* - to save a topic for later discussion. I\'ll list these for you when standup is over. \n \
-            *!left* - to find out who is left in the standup \n \
-            *!ignore* - to temporarily skip a user during standup for a while \n \
-            *!heed* - to add an ignored user back, starting with the next standup\n \
-            *!ignoring* - to find out who we\'re skipping over for standups\n \
-            Ask me "!help <command> to learn what they do.```')
+        post_message('My commands are: \n ``` \
+    !standup - to initiate a new standup \n \
+    !start - to get started with standup once everyone is ready \n \
+    !cancel  - if you\'d like to stop the standup entirely.\n \
+    !next - to call on the next person when you\'re done standing up \n \
+    !skip - to skip someone who isn\'t standing up that day \n \
+    !table - to save a topic for later discussion. I\'ll list these for you when standup is over. \n \
+    !left - to find out who is left in the standup \n \
+    !ignore - to temporarily skip a user during standup for a while \n \
+    !heed - to add an ignored user back, starting with the next standup\n \
+    !ignoring - to find out who we\'re skipping over for standups\n ``` \
+Ask me "!help <command> to learn what they do.')
         return
         
     topic = topic[1:]
